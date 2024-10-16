@@ -1,94 +1,166 @@
 @import url('https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 .averia-libre-light {
-    font-family: "Averia Libre", system-ui;
-    font-weight: 300;
-    font-style: normal;
+  font-family: "Averia Libre", system-ui;
+  font-weight: 300;
+  font-style: normal;
   }
   
   .averia-libre-regular {
-    font-family: "Averia Libre", system-ui;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Averia Libre", system-ui;
+  font-weight: 400;
+  font-style: normal;
   }
   
   .averia-libre-bold {
-    font-family: "Averia Libre", system-ui;
-    font-weight: 700;
-    font-style: normal;
+  font-family: "Averia Libre", system-ui;
+  font-weight: 700;
+  font-style: normal;
   }
   
   .averia-libre-light-italic {
-    font-family: "Averia Libre", system-ui;
-    font-weight: 300;
-    font-style: italic;
+  font-family: "Averia Libre", system-ui;
+  font-weight: 300;
+  font-style: italic;
   }
   
   .averia-libre-regular-italic {
-    font-family: "Averia Libre", system-ui;
-    font-weight: 400;
-    font-style: italic;
+  font-family: "Averia Libre", system-ui;
+  font-weight: 400;
+  font-style: italic;
   }
   
   .averia-libre-bold-italic {
-    font-family: "Averia Libre", system-ui;
-    font-weight: 700;
-    font-style: italic;
+  font-family: "Averia Libre", system-ui;
+  font-weight: 700;
+  font-style: italic;
   }
   
 
 *{
-    font-family: "Averia Libre", system-ui;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  font-family: "Averia Libre", system-ui;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background: linear-gradient(#131316, #171c5e, #131316);
-    color: #ffffff;
+  background: linear-gradient(#131316, #171c5e, #131316);
+  color: #ffffff;
 }
 
 h1{
-    color: rgb(186, 126, 255);
-    margin: 20px;
-    text-shadow: 4px 4px 5px black;
-    font-size: 30px;
+  color: rgb(186, 126, 255);
+  margin: 20px;
+  text-shadow: 4px 4px 5px black;
+  font-size: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
 }
 
 .but-main button {
-    padding: 2% 10px;
-    border: none;
-    cursor: pointer;
-    background-color: rgb(0, 90, 112);
-    color: whitesmoke;
-    box-shadow: 1px 1px 4px rgb(0, 0, 0);
-    transition: all 0.5s;
-    margin-left: 5px; 
+  padding: 2% 10px;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(0, 90, 112);
+  color: whitesmoke;
+  box-shadow: 1px 1px 4px rgb(0, 0, 0);
+  transition: all 0.5s;
+  margin-left: 5px; 
 }
 
 .but-main button:hover {
-    scale: 1.1;
-    box-shadow: 0px 0px 2px rgb(1, 247, 255);
+  scale: 1.1;
+  box-shadow: 0px 0px 2px rgb(1, 247, 255);
 }
 
 section{
-    display: grid;
-    place-items: center;
-    align-content: center;
-    min-height: 100vh;
-    border-top: solid 2px rgba(0, 0, 0, 0.2);
+  display: grid;
+  place-items: center;
+  align-content: center;
+  min-height: 100vh;
+  border-top: solid 2px rgba(0, 0, 0, 0.2);
 }
 
 .hidden {
-    opacity: 0;
-    transition: all 1s;
-    filter: blur(5px);
-    transform: translateX(-100%);
+  opacity: 0;
+  transition: all 1s;
+  filter: blur(5px);
+  transform: translateX(-100%);
 }
 
 .show {
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+article img{
+  width: 50%;
+}
+
+#slider {
+  position: relative;
+  display: block;
+  margin: auto;
+  height: 293px;
+  width: 600px;
+}
+
+#slider li {
+  list-style: none;
+  position: absolute;
+}
+
+#slider img {
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  vertical-align: top;
+  transition: all 0.5s;
+}
+
+#slider input {
+  display: none;
+}
+
+#slider label {
+  background-color: white;
+  border-radius: 20px;
+  bottom: 10px;
+  cursor: pointer;
+  display: block;
+  height: 10px;
+  position: absolute;
+  width: 10px;
+  z-index: 10;
+}
+
+#slider li:nth-child(1) label {
+  left: 10px;
+}
+
+#slider li:nth-child(2) label {
+  left: 40px;
+}
+
+#slider img {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#slider li input:checked ~ img {
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
+}
+
+.whoim {
+  overflow: hidden;
+  overflow-y: auto;
+  text-align: center;
+  overflow-wrap: break-word;
 }

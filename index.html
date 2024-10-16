@@ -5,32 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/style.css">
     <script defer src="src/js/app.js"></script>
-    <title>Test</title>
+    <title>Portfólio Wesley Leite Pereira</title>
 </head>
 <body>
 
     <section class="hidden">
         <h1>Olá! Seja Bem Vindo ao meu Portfólio!</h1>
         <div class="but-main">
-            <button>Projetos</button>
-            <button>Quem Sou?</button>
-            <button>Contato</button>
-            <button>Sobre Mim</button>
-            <button>Experiências</button>
+            <button><a href="#project">Projetos</a></button>
+            <button><a href="#whoim">Quem Sou?</button>
+            <button><a>Sobre Mim</button>
+            <button><a>Experiências</button>
+            <button><a>Contato</button>
         </div>
     </section>
 
-    <section class="hidden">
-        <h2>sec test</h2>
-        <p>This is a random text that i've made</p>
+    <section class="hidden" id="project">
+        <h1>Projetos</h1>
+        <article class="projects">
+            <ul class="projects" id="slider">
+                <li>
+                    <input type="radio" id="slide1" name="slide" checked>
+                    <label for="slide1"></label>
+                    <img src="src/img/Livro.png" alt="Site sobre um livro de Biomas Infantil">
+                </li>
+                <li>
+                    <input type="radio" id="slide2" name="slide">
+                    <label for="slide2"></label>
+                    <img src="src/img/tigerr.png" alt="Site de Suplementos">
+                </li>
+            </ul>
+        </article>
     </section>
 
-    <section class="hidden">
-        <h3>Only another test</h3>
-        <p>hello</p>
+    <section class="hidden" id="whoim">
+        <h1>Quem Sou?</h1>
+        <div class="whoim">
+            <p class="whoim">Me chamo Wesley, sou programador FullStack com especialidade em CSS, HTML, JavaScript e C++. 
+                Tenho uma sólida experiência em desenvolvimento web e já trabalhei em diversos projetos, 
+                desde a criação de sites e plataformas robustas até soluções personalizadas para atender às necessidades dos clientes. 
+                Busco oportunidades de trabalho, tanto como freelancer quanto em posições remotas, 
+                onde eu possa continuar desenvolvendo minhas habilidades e contribuindo com soluções eficientes e inovadoras.
+                Estou sempre disposto a aprender novas tecnologias e aprimorar meus conhecimentos 
+                para oferecer o melhor resultado em cada projeto.</p>
+        </div>
     </section>
 
-    
+    <section class="hidden" id="contact">
+        <h1>Contatos</h1>
+
+    </section>
 
 </body>
 </html>
