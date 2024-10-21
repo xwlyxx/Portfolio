@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 * {
   font-family: "Averia Libre", system-ui;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #1f1f1f #0b0b0b;
 }
 
 body {
@@ -152,6 +159,11 @@ span {
     gap: 3rem;
   }
 
+  .education {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
   .home-img img {
     width: 50vw;
   }
@@ -185,7 +197,15 @@ span {
     font-size: 1.5rem;
   }
 
+  .education h3 {
+    font-size: 1.5rem;
+  }
+
   .home-img img {
+    width: 60vw;
+  }
+
+  .education img {
     width: 60vw;
   }
 
@@ -209,8 +229,15 @@ span {
   .home-content h3 {
     font-size: 1rem;
   }
+  .education h3 {
+    font-size: 1rem;
+  }
 
   .home-img img {
+    width: 70vw;
+  }
+
+  .education img {
     width: 70vw;
   }
 
@@ -301,7 +328,24 @@ span {
 }
 
 .service{
+  display: flex;
   background: #020202;
+  justify-content: center;
+  align-items: center;
+  gap: 8%;
+}
+
+.service img {
+  width: 50%;
+  border: inset 1px white;
+  transition: all 0.5s ease-in-out;
+}
+
+.service img:hover {
+  transform: scale(1.01);
+  background: transparent;
+  filter: blur(10px) brightness(0.4);
+  translate: -5px -5px;
 }
 
 .skills{
@@ -313,7 +357,20 @@ span {
 }
 
 .education{
+  
+  display: flex;
+  text-align: center;
+  align-items: center;
+  gap: 8rem;
+  font-family: "Averia Libre", system-ui;
   background: #010101;
+}
+
+.education img {
+  width: 32vw;
+  border-radius: 50%;
+  box-shadow: 0 0 25px #5b0000;
+  cursor: pointer;
 }
 
 .contact{
